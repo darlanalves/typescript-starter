@@ -1,25 +1,15 @@
 {
-  "compileOnSave": true,
   "compilerOptions": {
-    "typeRoots": ["node_modules/@types"],
-    "types": [
-      "node"
-    ],
-    "baseUrl": "./",
-    "outDir": "./dist",
-    "sourceMap": false,
-    "declaration": true,
     "moduleResolution": "node",
+    "target": "es2019",
+    "lib": ["ESNext", "DOM"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "target": "es5",
-    "importHelpers": true,
-    "module": "commonjs",
-    "noEmitHelpers": true,
-    "lib": ["es2016","dom"]
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["jasmine"],
+    "outDir": "./dist"
   },
-  "exclude": [
-    "./dist/*.ts",
-    "./dist/**/*.ts"
-  ]
+  "include": ["./src/**/*.ts"]
 }
